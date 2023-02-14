@@ -22,7 +22,7 @@ function App() {
   const API_KEY = "c1d79bc81aa93ac69c22b48162dd2043";
   const FORECAST_KEY = "dccb89bf6d674d9899f153516231302";
   const API_URL = `https://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=${API_KEY}`;
-  const FORECAST_API_URL = `http://api.weatherapi.com/v1/forecast.json?key=${FORECAST_KEY}&q=${search},in&days=5&aqi=no&alerts=no`
+  const FORECAST_API_URL = `https://api.weatherapi.com/v1/forecast.json?key=${FORECAST_KEY}&q=${search},in&days=5&aqi=no&alerts=no`
 
   function searchWeatherHandler() {
     if (search !== "") {
