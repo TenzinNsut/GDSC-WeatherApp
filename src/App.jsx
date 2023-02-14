@@ -44,7 +44,7 @@ function App() {
   
 
   return (
-    <div className=" py-10 md:h-screen h-screen w-screen bg-gradient-to-r from-sky-500 to-indigo-500 flex flex-col justify-center  items-center  space-y-10">
+    <div className="pt-[50px] py-10 h-auto md:h-screen w-screen bg-gradient-to-r from-sky-500 to-indigo-500 flex flex-col justify-center  items-center  space-y-10">
 		  <Search searchData={search} eventHandler={changeSearch} searchWeather={searchWeatherHandler} />
       
       {weatherData.main && (
