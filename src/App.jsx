@@ -41,6 +41,7 @@ function App() {
       fetchForecastData();
     }
   }
+  
 
   return (
     <div className=" py-10 md:h-screen h-screen w-screen bg-gradient-to-r from-sky-500 to-indigo-500 flex flex-col justify-center  items-center  space-y-10">
