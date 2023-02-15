@@ -44,9 +44,10 @@ function App() {
   
 
   return (
-    <div className="pt-[50px] py-10 h-auto md:h-screen w-screen bg-gradient-to-r from-sky-500 to-indigo-500 flex flex-col justify-center  items-center  space-y-10">
+    <div className="py-10 md:h-screen w-screen bg-gradient-to-r from-sky-500 to-indigo-500 flex flex-col justify-center  items-center  space-y-10">
 		  <Search searchData={search} eventHandler={changeSearch} searchWeather={searchWeatherHandler} />
       
+      <div className='h-[1200px]  space-y-20 '>
       {weatherData.main && (
         <MainCard
           city={weatherData.name}
@@ -58,12 +59,14 @@ function App() {
           icon={weatherData.weather[0].icon}
           status={weatherData.weather[0].main}
         />
-      )}
-
+        )}
+        
       {forecastData.forecast && (
         <div className="text-white w-auto  md:w-auto md:min-w-[500px] mx-5 h-auto flex-col md:flex md:flex-row  md:h-[auto] p-5 rounded-xl shadow-2xl bg-[rgba(255,255,255,0.1)]  backdrop:blur-[10px] border-2 border-[rgba(255,255,255,0.25)]" >
           {forecastData.forecast.forecastday.map((x, index) => (<ForecastCard  date={x.date} icon={x.day.condition.icon} description={x.day.condition.text} temp={x.day.avgtemp_c} />))}
         </div>)}
+
+      </div>
 
     </div>
   )

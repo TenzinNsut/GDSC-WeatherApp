@@ -4,7 +4,7 @@ import { WiHumidity } from "react-icons/wi";
 
 function MainCard(props) {
     return (
-      <div className="text-white min-w-[100px] md:min-w-[500px] h-auto mt-5  md:h-[auto] p-5 rounded-xl shadow-2xl bg-[rgba(255,255,255,0.1)]  backdrop:blur-[10px] border-2 border-[rgba(255,255,255,0.25)] ">
+      <div className="text-white min-w-[100px] md:min-w-[500px] md:w-[500px] md:mx-auto h-auto mt-5  md:h-[auto] p-5 rounded-xl shadow-2xl bg-[rgba(255,255,255,0.1)]  backdrop:blur-[10px] border-2 border-[rgba(255,255,255,0.25)] ">
         <div className="flex flex-col items-center">
           <h1 className="text-3xl  font-semibold tracking-widest capitalize">
             {props.city}
