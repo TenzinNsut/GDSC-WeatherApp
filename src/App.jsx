@@ -47,7 +47,7 @@ function App() {
     <div className="py-10 md:h-screen w-screen bg-gradient-to-r from-sky-500 to-indigo-500 flex flex-col justify-center  items-center  space-y-10">
 		  <Search searchData={search} eventHandler={changeSearch} searchWeather={searchWeatherHandler} />
       
-      <div className='h-[1200px]  space-y-20 '>
+      <div className='h-[1200px] md:h-auto space-y-20 '>
       {weatherData.main && (
         <MainCard
           city={weatherData.name}
